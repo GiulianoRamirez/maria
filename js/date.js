@@ -4,18 +4,18 @@ dv.style.opacity = 0;
 var val = 0;
 
 function timer(){
-	var start = new Date(2018, 0, 27, 20, 53);
-	var t = new Date() - start;
-	var d = Math.floor(t / 1000 / 60 / 60 / 24);
-	var h = Math.floor(t / 1000 / 60 / 60 % 24);
+	var start = new Date(2025, 8, 21);
+	var tiempo = new Date() - start;
+	var d = Math.floor(tiempo / 1000 / 60 / 60 / 24);
+	var h = Math.floor(tiempo / 1000 / 60 / 60 % 24);
 	if(h < 10){
 		h = "0" + h;
 	}
-	var m = Math.floor(t / 1000 / 60 % 60);
+	var m = Math.floor(tiempo / 1000 / 60 % 60);
 	if(m < 10){
 		m = "0" + m;
 	}
-	var s = Math.floor(t / 1000 % 60);
+	var s = Math.floor(tiempo / 1000 % 60);
 	if(s < 10){
 		s = "0" + s;
 	}

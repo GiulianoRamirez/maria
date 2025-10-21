@@ -10,12 +10,12 @@
 }
 
 #txt1 {
-	font-size: 16px;
+	font-size: 20px;
 	text-align: center;
 	color: white;
 }
 #txt2 {
-	font-size: 16px;
+	font-size: 20px;
 	text-align: center;
 	color: white;
 }
@@ -61,7 +61,7 @@
 	position: absolute;
 	display: table;
 	vertical-align: middle;
-	top: 80%;
+	top: 70%;
 	left: 0;
 	right: 0;
 	margin: auto;
@@ -71,7 +71,7 @@
 
 #clickMe{
 	display: inline-block;
-	font-size: 16px;
+	font-size: 20px;
 	width: 100%;
 	text-align: center;
 	color: white;
@@ -79,7 +79,7 @@
 
 #heart{
 	width: 100%;
-	height: 100%;
+	height: 10vh;
 }
 
 #button{
@@ -103,14 +103,18 @@
 
 #imgTxt{
 	position: absolute;
-	display: table;
-	vertical-align: middle;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 	top: 20%;
 	left: 0;
 	right: 0;
 	margin: auto;
 	width: 100%;
 	height: 50%;
+	padding: 20px;
+	box-sizing: border-box;
 }
 
 #img{
@@ -118,13 +122,18 @@
 	left: 0;
 	right: 0;
 	margin: auto;
-	width: auto;
+	width: 100%;
 	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 10px;
+	max-width: 90%;
+	max-height: 100%;
 }
 
 #Txt{
 	display: inline-block;
-	font-size: 17px;
+	font-size: 20px;
 	width: 100%;
 	text-align: center;
 	color: white;
