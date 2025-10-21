@@ -73,10 +73,16 @@ function showImage(){
 			video.autoplay = true;
 			video.loop = false;
 			video.muted = true;
+			video.controls = false;
+			video.playsInline = true; // Importante para móviles
+			video.setAttribute('webkit-playsinline', 'true'); // Para iOS Safari
 			video.style.width = '100%';
 			video.style.height = '100%';
 			video.style.objectFit = 'cover';
 			video.style.borderRadius = '10px';
+			video.style.position = 'absolute';
+			video.style.top = '0';
+			video.style.left = '0';
 			myImage.parentNode.appendChild(video);
 		}
 		document.getElementById('videoPlayer').src = imageArray[imageIndex];
@@ -141,10 +147,16 @@ function preshowImage(){
 			video.autoplay = true;
 			video.loop = false;
 			video.muted = true;
+			video.controls = false;
+			video.playsInline = true; // Importante para móviles
+			video.setAttribute('webkit-playsinline', 'true'); // Para iOS Safari
 			video.style.width = '100%';
 			video.style.height = '100%';
 			video.style.objectFit = 'cover';
 			video.style.borderRadius = '10px';
+			video.style.position = 'absolute';
+			video.style.top = '0';
+			video.style.left = '0';
 			myImage.parentNode.appendChild(video);
 		}
 		document.getElementById('videoPlayer').src = imageArray[imageIndex];
